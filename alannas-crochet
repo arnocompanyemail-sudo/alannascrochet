@@ -1,12 +1,143 @@
-index.html
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alanna’s Crochet</title>
-  <link rel="stylesheet" href="style.css">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+      background: #faf7f4;
+      color: #333;
+    }
+
+    header {
+      background: white;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(135deg, #f3e7e1, #fdfbfa);
+    }
+
+    .hero h2 {
+      font-size: 2.2rem;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      background: #c59aa6;
+      color: white;
+      padding: 12px 30px;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: 600;
+      display: inline-block;
+    }
+
+    .orders {
+      padding: 60px 20px;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .orders h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    input, textarea {
+      padding: 12px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+      font-size: 1rem;
+    }
+
+    textarea {
+      min-height: 120px;
+    }
+
+    button {
+      padding: 12px;
+      border: none;
+      background: #333;
+      color: white;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #000;
+    }
+
+    .note {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: white;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+      }
+
+      nav {
+        margin-top: 10px;
+      }
+
+      .hero h2 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
   <header>
@@ -40,131 +171,3 @@ index.html
 
 </body>
 </html>
-
-style.css
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: "Segoe UI", sans-serif;
-}
-
-body {
-  background: #faf7f4;
-  color: #333;
-}
-
-header {
-  background: white;
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-}
-
-header h1 {
-  font-size: 1.5rem;
-}
-
-nav a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-}
-
-.hero {
-  text-align: center;
-  padding: 80px 20px;
-  background: linear-gradient(135deg, #f3e7e1, #fdfbfa);
-}
-
-.hero h2 {
-  font-size: 2.2rem;
-  margin-bottom: 15px;
-}
-
-.hero p {
-  font-size: 1.1rem;
-  margin-bottom: 30px;
-}
-
-.btn {
-  background: #c59aa6;
-  color: white;
-  padding: 12px 30px;
-  text-decoration: none;
-  border-radius: 30px;
-  font-weight: 600;
-}
-
-.orders {
-  padding: 60px 20px;
-  max-width: 600px;
-  margin: auto;
-}
-
-.orders h2 {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-}
-
-input, textarea {
-  padding: 12px;
-  margin-bottom: 15px;
-  border-radius: 8px;
-  border: 1px solid #ddd;
-}
-
-textarea {
-  min-height: 120px;
-}
-
-button {
-  padding: 12px;
-  border: none;
-  background: #333;
-  color: white;
-  border-radius: 8px;
-  font-size: 1rem;
-  cursor: pointer;
-}
-
-button:hover {
-  background: #000;
-}
-
-.note {
-  text-align: center;
-  margin-top: 15px;
-  font-size: 0.9rem;
-  color: #666;
-}
-
-footer {
-  text-align: center;
-  padding: 20px;
-  background: white;
-  margin-top: 40px;
-}
-
-/* Mobile Friendly */
-@media (max-width: 600px) {
-  header {
-    flex-direction: column;
-  }
-
-  nav {
-    margin-top: 10px;
-  }
-
-  .hero h2 {
-    font-size: 1.8rem;
-  }
-}
